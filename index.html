@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./Style/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+        <header>
+
+            <div class="user">
+                <img src="./Images/blank.png" alt="">
+                <h2 class="name">Pay Via</h2>
+            </div>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html"><i class='bx bxs-credit-card'></i>&nbsp; &nbsp;UPI ID</a></li>
+                    <li><a href="bank.html"><i class='bx bx-home-heart'></i>&nbsp; &nbsp;Bank Transfer</a></li>
+                    <li><a href="qr.html"> <i class='bx bx-scan' ></i>&nbsp; &nbsp;Scan QR</a></li>
+                    <li><a href="card.html"><i class='bx bxs-credit-card'></i>&nbsp; &nbsp;Card Transfer</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="main-content">
+            <form id="payment" method="post" enctype="multipart/form-data">
+               
+                <div id="upi id" class="tab-pane fade">
+                    <div class="card-body form-card">
+                        <h5>UPI ID Payment</h5>
+                        <div class="text-center">
+                            <i class='bx bxs-bank'></i>
+                        </div>
+                    </div>
+                </div>
+                        <div class="input-box">
+                            <label for="upi id">Enter UPI ID:</label>
+                              <input type="text" name="upi id" id="upi id" required>
+                        </div>
+        
+                            <div class="input-box">
+                                <label for="Feedback">Note (Optinal):</label>
+                               <textarea id="Feedback" name="Feedback" rows="8" placeholder="Your Comments For requirement:" required></textarea>
+                            </div>
+                            
+                        <button type="submit" class="btn" onclick="myalert()">Pay</button>
+                  
+               </form>
+               
+            <script>
+                function myalert() {
+                    alert("Paid Successfully");
+                }
+            </script>
+
+
+            
+
+
+    </body>
+
+</html>
